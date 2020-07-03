@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <Button
+        android:id="@+id/bt0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="hello"/>
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/bt0"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="150dp"
+        android:text="hello1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/bt0"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="150dp"
+        android:text="hello2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/bt0"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="150dp"
+        android:text="hello3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/bt0"
+        app:layout_constraintCircleAngle="135"
+        app:layout_constraintCircleRadius="150dp"
+        android:text="hello4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/bt0"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="150dp"
+        android:text="hello5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/bt0"
+        app:layout_constraintCircleAngle="225"
+        app:layout_constraintCircleRadius="150dp"
+        android:text="hello6"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/bt0"
+        app:layout_constraintCircleAngle="275"
+        app:layout_constraintCircleRadius="150dp"
+        android:text="hello7"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/bt0"
+        app:layout_constraintCircleAngle="315"
+        app:layout_constraintCircleRadius="150dp"
+        android:text="hello8"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

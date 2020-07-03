@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.login.LoginActivity">
+    <data>
+        <variable
+            name="vm"
+            type="com.example.wushengqing.ui.login.LoginViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            binding:layout_constraintStart_toStartOf="parent"
+            binding:layout_constraintEnd_toEndOf="parent"
+            binding:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp40"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            binding:layout_constraintBottom_toBottomOf="@id/et_account"
+            binding:layout_constraintVertical_bias="0.3"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/app_color_blue"
+            android:textSize="@dimen/dp25"
+            android:layout_marginTop="@dimen/dp30"
+            binding:layout_constraintTop_toBottomOf="@id/iv_logo"
+            android:text="@string/app_name"/>
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            binding:layout_constraintStart_toStartOf="parent"
+            binding:layout_constraintEnd_toEndOf="parent"
+            binding:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_marginLeft="@dimen/dp30"
+            android:text="@={vm.userName}"
+            binding:layout_constraintVertical_bias="0.4"
+            android:hint="请输入账号"
+            android:background="@null"
+            android:drawablePadding="@dimen/dp20"
+            binding:layout_constraintBottom_toBottomOf="parent"
+            android:drawableLeft="@mipmap/log_codes_icon"
+            android:inputType="text"
+            android:autofillHints="" />
+
+        <View
+            android:id="@+id/v_line_account"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            binding:layout_constraintTop_toBottomOf="@id/et_account"
+            binding:layout_constraintStart_toStartOf="parent"
+            binding:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/colorashh"/>
+
+        <EditText
+            android:id="@+id/et_pw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            binding:layout_constraintStart_toStartOf="parent"
+            binding:layout_constraintEnd_toEndOf="parent"
+            binding:layout_constraintTop_toBottomOf="@id/v_line_account"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:drawableLeft="@mipmap/log_pwd_icon"
+            android:drawablePadding="@dimen/dp20"
+            android:text="@={vm.userPassword}"
+            android:hint="请输入密码"
+           />
+
+
+        <View
+            android:id="@+id/v_line_pw"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            binding:layout_constraintTop_toBottomOf="@id/et_pw"
+            binding:layout_constraintStart_toStartOf="parent"
+            binding:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/colorashh"/>
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            binding:layout_constraintStart_toStartOf="parent"
+            binding:layout_constraintEnd_toEndOf="parent"
+            binding:layout_constraintTop_toBottomOf="@id/v_line_pw"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20"
+            android:background="@drawable/search_button_icon"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dp30"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
