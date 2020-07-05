@@ -3,7 +3,7 @@
 # 基类封装
 # 网络请求框架retrofit 封装
 # 框架结构
-# ViewModel的用法
+# ViewModel以及LiveData的用法
 # DataBinding 的用法
 # Recyclerview 结合DataBinding的用法
 # ImageView 结合DataBinding 的用法
