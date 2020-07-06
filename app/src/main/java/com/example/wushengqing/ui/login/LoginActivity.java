@@ -40,7 +40,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding,LoginViewMo
         binding.btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewModel.requestLogin(getClass().getSimpleName());
+                viewModel.requestLogin();
             }
         });
     }

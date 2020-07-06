@@ -35,7 +35,7 @@ public class LoginViewModel extends BaseViewModel {
     }
 
 
-    public void requestLogin(String tag){
+    public void requestLogin(){
         Map<String,Object> param = new HashMap();
         param.put("username",userName.get());
         param.put("password",userPassword.get());

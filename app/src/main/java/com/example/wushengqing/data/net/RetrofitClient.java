@@ -18,7 +18,8 @@ import com.example.wushengqing.http.interceptor.BaseInterceptor;
 import com.example.wushengqing.http.interceptor.CacheInterceptor;
 import com.example.wushengqing.http.interceptor.logging.Level;
 import com.example.wushengqing.http.interceptor.logging.LoggingInterceptor;
-import com.lzy.okgo.https.HttpsUtils;
+import com.example.wushengqing.utils.HttpsUtils;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -51,7 +52,6 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by goldze on 2017/5/10.
  * RetrofitClient封装单例类, 实现网络请求
  */
 public class RetrofitClient {

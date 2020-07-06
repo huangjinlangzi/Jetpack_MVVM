@@ -67,7 +67,6 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
 
     implementation 'com.google.code.gson:gson:2.8.6'
-    implementation 'com.lzy.net:okgo:3.0.4'
     implementation 'com.alibaba:fastjson:1.2.61'
     implementation 'com.blankj:utilcodex:1.28.0'
     implementation 'com.github.qingmei2.rxweaver:rxweaver_java:0.2.1'

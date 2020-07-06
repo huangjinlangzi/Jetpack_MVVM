@@ -33,9 +33,7 @@ import java.util.Map;
 
 import io.reactivex.observers.DisposableObserver;
 
-/**
- * Create by KunMinX at 19/10/29
- */
+
 public class DataRepository implements ILocalRequest, IRemoteRequest {
     public ApiService apiService = RetrofitClient.getInstance().create(ApiService.class);
 
